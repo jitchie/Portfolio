@@ -10,13 +10,15 @@ header {
   background: linear-gradient(135deg, #64dae6, #9198e5);
 }
 
+footer svg {
+  position: absolute;
+}
 .header-main {
   display: flex;
   justify-content: space-between;
   height: 100%;
   align-items: center;
   padding: 0 25px;
-  
 }
 
 header h1 {
@@ -34,7 +36,6 @@ nav ul li a {
   text-decoration: none;
   transition: all 300ms;
   color: #fff;
-
 }
 
 nav ul li a:visited {
@@ -144,6 +145,12 @@ ul {
   padding-left: 15px;
   margin-bottom: 15px;
 }
+.weather-header {
+  padding: 10px;
+}
+.code-header {
+  padding: 10px;
+}
 
 address {
   width: 100%;
@@ -152,12 +159,17 @@ address {
   justify-content: space-between;
   padding: 25px;
   margin: 35px 0;
-  background: #efefef;
+  position: relative;
+  z-index: 999;
 }
 
 .address-column {
   display: flex;
   justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgb(92, 64, 138);
+  background: #fff;
 }
 
 .address-column svg {
@@ -227,18 +239,18 @@ footer {
     height: auto;
   }
   address {
-   flex-direction: column;
-   width: 100%;
-   align-items: center;
-   justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
   #git-hub-page,
   #instagram,
   #Linked-in,
   #mobile-contact {
-   width: 50%;
-   height: 50%;
-   display: block;
+    width: 50%;
+    height: 50%;
+    display: block;
   }
   .address-column {
     margin-bottom: 50px;
@@ -261,5 +273,4 @@ footer {
     padding: 0 25px;
     margin-bottom: 25px;
   }
-
 }
